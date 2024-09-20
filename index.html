@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body>
+    <div class="">
+      <div class="d-flex justify-content-center align-items-center heading">
+        <h1>Bookmarker</h1>
+      </div>
+      <div class="main">
+        <h2 class="">
+          <i class="fa-solid fa-bookmark"></i> Bookmark Your Favorite Sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <form class="form-box">
+          <div class="text-start mb-5">
+            <label for="siteName" class="form-label"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i> Website
+              Title:</label
+            >
+            <input
+              type="text"
+              name="siteName"
+              id="siteName"
+              class="form-control shadow-sm"
+              placeholder="BookMarker Title..."
+            />
+          </div>
+          <div class="text-start">
+            <label for="siteUrl" class="form-label"
+              ><i class="fa-solid fa-link pe-2"></i> Website Address:</label
+            >
+            <input
+              type="text"
+              name="siteUrl"
+              id="siteUrl"
+              class="form-control shadow-sm"
+              placeholder="Website Address..."
+            />
+          </div>
+          <div class="">
+            <button
+              class="btn btn-success px-5 mt-4 mb-3 text-white shadow rounded-5"
+              id="addBtn"
+            >
+              Create Bookmark
+            </button>
+            <button
+              class="btn btn-warning px-5 mt-4 mb-3 rounded-5 shadow d-none"
+              id="updateBtn"
+            >
+              Update Bookmark
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bookmarked-sites">
+        <div class="search-box">
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="Find Bookmarks..."
+            class="form-control shadow-sm"
+          />
+        </div>
+        <div class="table-responsive">
+          <table class="table shadow-sm">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Go to Website</th>
+                <th scope="col">Edit Bookmark</th>
+                <th scope="col">Remove Bookmark</th>
+              </tr>
+            </thead>
+            <tbody class="tableData" id="tableData"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
